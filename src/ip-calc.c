@@ -9,6 +9,8 @@ union IPAddress {
 /* Richiesta del'indirizzo IP da analizzare
  * La funzione usa l'arrow operator(->) per accedere ai membri dell'union
  * IPAddress
+ * La funzione accetta solo indirizzi ip validi, ogni byte dell'ip deve essere
+ * compreso tra 0 e 255 e il cidr massimo e' 32
  **/
 void readIP(union IPAddress *ip, int *e) {
   do {
